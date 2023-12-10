@@ -1,10 +1,56 @@
 {
-    "keyboard_name": "LadisPad",
-    "manufacturer": "Ladis",
-    "usb": {
-        "pid": "0x6060",
-        "vid": "0xFEED",
-        "device_version": "0.0.1"
+    "keyboard_name": "ladis",
+    "maintainer": "Alexander Zhuravlev",
+    "manufacturer": "Zhaurma",
+    "bootloader": "caterina",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true
     },
-    "bootloader": "atmel-dfu"
+    "matrix_pins": {
+        "direct": [
+            ["D3", "B1", "D4", "C6", "D7", "E6", "F7", "B4", "B5", "F4", "B3"]
+        ]
+    },
+    "encoder": {
+        "rotary": [
+            {
+                "pin_a": "F5",
+                "pin_b": "F6"
+            },
+            {
+                "pin_a": "B6",
+                "pin_b": "B2"
+            }
+        ]
+    },
+    "processor": "atmega32u4",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0001",
+        "vid": "0x6582"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0},
+                {"matrix": [0, 1], "x": 1, "y": 0},
+                {"matrix": [0, 2], "x": 2, "y": 0},
+                {"matrix": [0, 3], "x": 3, "y": 0},
+                {"matrix": [0, 4], "x": 0, "y": 1},
+                {"matrix": [0, 5], "x": 1, "y": 1},
+                {"matrix": [0, 6], "x": 2, "y": 1},
+                {"matrix": [0, 7], "x": 0, "y": 2},
+                {"matrix": [0, 8], "x": 1, "y": 2},
+                {"matrix": [0, 9], "y": 1, "x": 3.25},
+                {"matrix": [0, 10], "y": 2, "x": 3.25},
+            ]
+        }
+    }
 }
